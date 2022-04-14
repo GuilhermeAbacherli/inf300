@@ -1,0 +1,12 @@
+{
+  "java.jdt.ls.vmargs": "-XX:+UseParallelGC -XX:GCTimeRatio=4 -XX:AdaptiveSizePolicyWeight=90 -Dsun.zip.disableMemoryMapping=true -Xmx8G -Xms100m",
+  "java.project.sourcePaths": [
+    "inf335/trabalho2/src/main/java",
+    "inf335/trabalho2/src/test/java"
+  ],
+  "java.project.referencedLibraries": [
+    "inf335/trabalho2/src/main/resources/**/*.jar",
+    "inf335/trabalho2/src/test/resources/**/*.jar"
+  ],
+  "java.project.outputPath": "inf335/trabalho2/bin"
+}
