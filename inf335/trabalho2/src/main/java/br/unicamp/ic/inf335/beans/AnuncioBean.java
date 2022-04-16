@@ -44,7 +44,9 @@ public class AnuncioBean implements java.io.Serializable {
   }
 
   public void setDesconto(Double desconto) {
-    this.desconto = desconto;
+    if (desconto < 0.0) this.desconto = 0.0;
+    else if (desconto > 1.0) this.desconto = 1.0;
+    else this.desconto = desconto;
   }
 
   public static long getSerialversionuid() {
@@ -80,6 +82,6 @@ public class AnuncioBean implements java.io.Serializable {
    * @return retona valor do produto menos o desconto
    */
   public Double getValor() {
-    return produto.getValor() - (produto.getValor() / desconto);
+    return produto.getValor() * desconto;
   }
 }
