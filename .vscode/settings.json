@@ -8,5 +8,6 @@
     "inf335/trabalho2/src/main/resources/**/*.jar",
     "inf335/trabalho2/src/test/resources/**/*.jar"
   ],
-  "java.project.outputPath": "inf335/trabalho2/bin"
+  "java.project.outputPath": "inf335/trabalho2/bin",
+  "java.configuration.updateBuildConfiguration": "interactive"
 }
