@@ -4,6 +4,11 @@ pipeline {
   }
 
   stages {
+    stage('Init') {
+      def dockerHome = tool 'docker'
+      env.PATH = "${dockerHome}/bin:${env.PATH}"
+    }
+
     stage('Build') {
       steps {
         git branch: 'main', url: 'https://github.com/GuilhermeAbacherli/inf300.git'
