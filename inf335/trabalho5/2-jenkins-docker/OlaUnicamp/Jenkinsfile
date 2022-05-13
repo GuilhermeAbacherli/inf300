@@ -10,5 +10,11 @@ pipeline {
         sh 'cd inf335/trabalho5/2-jenkins-docker; docker build --tag trabalho5_2-jenkins-docker .'
       }
     }
+
+    stage('Run') {
+      steps {
+        sh 'docker run --rm trabalho5_2-jenkins-docker'
+      }
+    }
   }
 }
