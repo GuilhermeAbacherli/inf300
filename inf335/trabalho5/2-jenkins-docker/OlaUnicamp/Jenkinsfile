@@ -1,8 +1,9 @@
 pipeline {
-  agent {
-    // docker { image 'openjdk:11' }
-    label 'master'
-  }
+  agent any
+  // agent {
+  //   // docker { image 'openjdk:11' }
+  //   label 'master'
+  // }
 
   tools {
     // a bit ugly because there is no `@Symbol` annotation for the DockerTool
