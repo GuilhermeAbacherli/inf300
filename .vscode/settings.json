@@ -2,7 +2,8 @@
   "java.jdt.ls.vmargs": "-XX:+UseParallelGC -XX:GCTimeRatio=4 -XX:AdaptiveSizePolicyWeight=90 -Dsun.zip.disableMemoryMapping=true -Xmx8G -Xms100m",
   "java.project.sourcePaths": [
     "inf335/trabalho2/src/main/java",
-    "inf335/trabalho2/src/test/java"
+    "inf335/trabalho2/src/test/java",
+    "inf335/trabalho5/2-jenkins-docker/OlaUnicamp/src"
   ],
   "java.project.referencedLibraries": [
     "inf335/trabalho2/src/main/resources/**/*.jar",
