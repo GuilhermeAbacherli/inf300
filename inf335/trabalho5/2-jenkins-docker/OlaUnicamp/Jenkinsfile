@@ -4,7 +4,7 @@ pipeline {
   }
 
   tools {
-    docker 'docker'
+    dockerTool 'docker'
   }
 
   stages {
@@ -12,13 +12,13 @@ pipeline {
       steps {
         git branch: 'main', url: 'https://github.com/GuilhermeAbacherli/inf300.git'
         sh 'cd inf335/trabalho5/2-jenkins-docker'
-        docker 'build --tag trabalho5_2-jenkins-docker .'
+        dockerTool 'build --tag trabalho5_2-jenkins-docker .'
       }
     }
 
     stage('Run') {
       steps {
-        docker 'run --rm trabalho5_2-jenkins-docker'
+        dockerTool 'run --rm trabalho5_2-jenkins-docker'
       }
     }
   }
