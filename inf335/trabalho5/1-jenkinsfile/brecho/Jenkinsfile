@@ -13,7 +13,7 @@ pipeline {
         git branch: 'main', url: 'https://github.com/GuilhermeAbacherli/inf300.git'
 
         // Run Maven on a Unix agent.
-        sh 'cd inf335/trabalho5/brecho; mvn -Dmaven.test.failure.ignore=true clean package'
+        sh 'cd inf335/trabalho5/1-jenkinsfile/brecho; mvn -Dmaven.test.failure.ignore=true clean package'
 
         // To run Maven on a Windows agent, use
         // bat "mvn -Dmaven.test.failure.ignore=true clean package"
@@ -23,8 +23,8 @@ pipeline {
         // If Maven was able to run the tests, even if some of the test
         // failed, record the test results and archive the jar file.
         success {
-          junit '**/inf335/trabalho5/brecho/target/surefire-reports/TEST-*.xml'
-          archiveArtifacts 'inf335/trabalho5/brecho/target/*.jar'
+          junit '**/inf335/trabalho5/1-jenkinsfile/brecho/target/surefire-reports/TEST-*.xml'
+          archiveArtifacts 'inf335/trabalho5/1-jenkinsfile/brecho/target/*.jar'
         }
       }
     }
