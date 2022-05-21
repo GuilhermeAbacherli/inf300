@@ -2,7 +2,7 @@
 https://ic.unicamp.br/extensao/cursos/engenharia-de-software
 
 > ## __inf300__
-> The main folder of the course subjects.
+> The main folder of the course subjects
 >> ## __inf335__ - Environments for Software Design
 >> * IDE and debugger
 >> * Tests with JUnit
